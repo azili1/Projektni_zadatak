@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ante Žili">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+ 
+    <header>
+        <h1>Dobrodošli na našu kontakt stranicu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="novosti.html">Novosti</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Naša lokacija</h2>
+            <p>Posjetite nas na našoj lokaciji ili nam pošaljite poruku putem forme ispod.</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509144!2d144.95373631566748!3d-37.81627974202195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb69c1e6480d54a9e!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2shr!4v1673527082715!5m2!1sen!2shr" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+
+        <section>
+            <h2>Kontakt forma</h2>
+            <form action="process-form.php" method="post">
+                <div class="form-group">
+                    <label for="ime">Ime*</label>
+                    <input type="text" id="ime" name="ime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="prezime">Prezime*</label>
+                    <input type="text" id="prezime" name="prezime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail adresa*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="drzava">Država</label>
+                    <select id="drzava" name="drzava">
+                        <option value="hr">Hrvatska</option>
+                        <option value="si">Slovenija</option>
+                        <option value="ba">Bosna i Hercegovina</option>
+                        <option value="rs">Srbija</option>
+                        <option value="me">Crna Gora</option>
+                        <option value="ostalo">Ostalo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="opis">Opis poruke</label>
+                    <textarea id="opis" name="opis" rows="5" placeholder="Ovdje unesite svoju poruku..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Pošalji</button>
+            </form>
+        </section>
+    </main>
+
+	
+	<footer>
+		<p>&copy; 2025 Ante Žili. Sva prava pridržana.</p>
+		<div class="social-links">
+			<a href="https://github.com/azili1" target="_blank">
+				<img src="github-icon.png" alt="GitHub" class="icon"> GitHub
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
